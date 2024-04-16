@@ -41,7 +41,7 @@ void loop() {
 
   timer++;
 
-  if (timer >= 1000) {
+  if (timer >= 1000) { //using a delay of 1000 would cause the entire thread to sleep and hold, thus this is the way. Thanks to a friend for helping me with this
     timer = 0;
     defaultDisplay();
     checkSensors();
@@ -49,7 +49,7 @@ void loop() {
 
 
 
-  delay(1);
+  delay(1); 
 }
 
 
