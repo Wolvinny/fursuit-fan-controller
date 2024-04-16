@@ -36,7 +36,7 @@ void loop() {
     // control LED arccoding to the toggled state
     digitalWrite(LED_PIN, ledState);
     defaultDisplay();
-    delay(250); //debounce 25 is genoeg
+    delay(250); //debouncing
   }
 
   timer++;
