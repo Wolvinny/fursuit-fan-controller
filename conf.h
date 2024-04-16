@@ -3,7 +3,7 @@
 const int DISPLAY_WIDTH = 128; //the width of your oled display. If you have a larger / smaller one, text might not render correctly
 const int DISPLAY_HEIGHT = 64;
 
-const int TEMP_WARN = 40;
+const int TEMP_WARN = 50;
 const int TEMP_OVHT = 60;
 
 const int USE_F = false; //Whether to use °F instead of °C.

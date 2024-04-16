@@ -21,7 +21,7 @@ const long MAX_VALUES_NUM = 40;
 //40 measurements
 AverageValue<float> averageValue(MAX_VALUES_NUM);
 
-const int checkSensors() {
+void checkSensors() {
   sensors.requestTemperatures();
 
   float curr;

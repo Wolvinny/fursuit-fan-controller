@@ -3,6 +3,7 @@
 #include "./button.h"
 #include "./conf.h"
 
+
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
@@ -11,11 +12,13 @@ Adafruit_SSD1306 display(DISPLAY_WIDTH, DISPLAY_HEIGHT, &Wire, -1);
 
 
 
-const int defaultDisplay() {
+void defaultDisplay() {
   display.clearDisplay();
 
-  display.setCursor(0, 0);
-  display.print("Current: ");
+
+
+  display.setCursor(0, 0);   
+     display.print("Current: ");
   float temp;
 
   if(USE_F) {
@@ -62,7 +65,6 @@ const int defaultDisplay() {
   display.setCursor(0, 40);
   display.print("Last water: ");
   display.print(getFormattedMillisString(millis()));
-
 
   display.display();
 }
