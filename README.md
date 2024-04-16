@@ -55,6 +55,8 @@ You will also need to install the following libraries:
 - AverageValue
 
 
+If you end up using my project, it would mean a lot if you could [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future
+
 
 
 
