@@ -8,7 +8,7 @@ Features:
 - Temperature monitoring: current temp, min temp, max temp, and average temp (of the last 20 measurements)
 - Hi temp warning: if the temp reaches above a certain number (i used 50 for testing, customisable), a warning will start to flash.
 - Automatic cooling: if the temp reaches above 60 (again customisable), the fan will kick in and stop when a temperature lower than 50 (the warning threshold) is reached.
-- A 'Last drink at' timestamp, which is basically just the time since the system was powered up, so you need to restart / reset to reset this timer.
+- A 'Last water' timestamp, which is basically just the time since the system was powered up, so you need to restart / reset to reset this timer.
 
 The configuration can be found in the conf.h file
 
@@ -38,11 +38,23 @@ Here the transistor is replaced by a LED, and the button is your reed switch. So
 SDA is connected to pin A4, SCL to A5.<br>
 The resistor has a value of 4k7<br>
 
+To reset the nano, press the little reset switch. This will restart the program.
+ALternatively, you can connect a switch to the RST pin to reset via there. Note that this switch needs to be connected to ground, not to 5v
+
 ![image](https://github.com/Wolvinny/Fursuit-fan-controller/assets/84203950/aabab62c-70be-47c7-bdce-003191842c2d)
 
 Config. 
 If you want the temps to be displayed and configured in °F, set USE_F to true. 
 By default, the fan will turn on above the configured overheat threshold. This however can be overriden by using the switch. Do note this will not get rid of the message, and will only reset once the temp drops below the warning threshold. The fan will also automatically turn off once this is reached.
+
+You will also need to install the following libraries: 
+- Adafruit GFX Library
+- Adafruit SSD1306
+- OneWire
+- DallasTemperature
+- AverageValue
+
+
 
 
 
