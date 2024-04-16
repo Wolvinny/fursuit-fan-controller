@@ -2,7 +2,7 @@
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <AverageValue.h>
-#include "./config.h"
+#include "./conf.h"
 
 
 
