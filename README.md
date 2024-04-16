@@ -29,7 +29,7 @@ Note that this is just a project i made. I do not have much experience with c so
 - Shrink tube / hotglue. Since the oled will be mounted inside of the head, where it can be humid, the display should be protected.
 
 You dont really need to have any experience with c or just any programming language in general.
-You do need some knowledge about how to upload code to the arduino but theres tons of tutorials on that
+You do need some knowledge about how to upload code to the arduino but theres tons of tutorials on that.
 
 You have to use a transistor to switch on the output fan since the nano can deliver a max of 20mA output, the fan i use is 200mA. <br>
 The default i2c adress for the oled i used was 0x3c. These displays can also have 0x3d as address, you can find yours by looking at the back side of the panel.<br>
@@ -39,6 +39,10 @@ SDA is connected to pin A4, SCL to A5.<br>
 The resistor has a value of 4k7<br>
 
 ![image](https://github.com/Wolvinny/Fursuit-fan-controller/assets/84203950/aabab62c-70be-47c7-bdce-003191842c2d)
+
+Config. 
+If you want the temps to be displayed and configured in °F, set USE_F to true. 
+By default, the fan will turn on above the configured overheat threshold. This however can be overriden by using the switch. Do note this will not get rid of the message, and will only reset once the temp drops below the warning threshold. The fan will also automatically turn off once this is reached.
 
 
 
