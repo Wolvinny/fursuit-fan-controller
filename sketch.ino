@@ -14,7 +14,7 @@ void setup() {
 
   Wire.begin();
 
-  display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
+  display.begin(SSD1306_SWITCHCAPVCC, 0x3C); //second param is i2c address
   display.setTextSize(1);
   display.setTextColor(WHITE);
 
