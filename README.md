@@ -1,4 +1,4 @@
-# fursuit Fan Controller
+# fursuit fan Controller
 A fursuit fan controller, that can be manually triggered or when a set temperature is hit. 
 I made this because i have a fan, which is quite powerful but i do not hear anything when its running.
 I havent had much time to test and tune in the temps, this also depends from fursuit to fursuit, though i recommend to keep the warning temp and overheat temp within 10° from eachother.
