@@ -1,7 +1,7 @@
 #include "./checksensor.h"
 #include "./formatTime.h"
 #include "./button.h"
-#include "./config.h"
+#include "./conf.h"
 
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
