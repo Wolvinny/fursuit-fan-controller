@@ -3,27 +3,25 @@
 #include "./button.h"
 #include "./conf.h"
 
-
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 
 Adafruit_SSD1306 display(DISPLAY_WIDTH, DISPLAY_HEIGHT, &Wire, -1);
 
-
-
-
-void defaultDisplay() {
+void defaultDisplay()
+{
   display.clearDisplay();
 
-
-
-  display.setCursor(0, 0);   
-     display.print("Current: ");
+  display.setCursor(0, 0);
+  display.print("Current: ");
   float temp;
 
-  if(USE_F) {
+  if (USE_F)
+  {
     temp = sensors.getTempFByIndex(0);
-  } else {
+  }
+  else
+  {
     temp = sensors.getTempCByIndex(0);
   }
 
@@ -39,26 +37,36 @@ void defaultDisplay() {
   display.print("Avg: ");
   float avg = averageValue.average();
 
-  if (avg < min)   display.print("initializing"); //takes a while to stabilize
-  else   display.print(avg);
+  if (avg < min)
+    display.print("initializing"); // takes a while to stabilize
+  else
+    display.print(avg);
   display.setCursor(0, 30);
   String text = "Fan ";
-  if (ledState == HIGH) {
+  if (ledState == HIGH)
+  {
     text += "ON";
-  } else {
+  }
+  else
+  {
     text += "OFF";
   }
   display.println(text);
 
   display.setCursor(30, 50);
-  //if t > 50 flash, if > 60 constant and fan on
-  if (wrn && !ovht && !printed)  {
+  // if t > 50 flash, if > 60 constant and fan on
+  if (wrn && !ovht && !printed)
+  {
     display.println("HI TEMP");
     printed = true;
-  } else if (wrn && !ovht && printed) {
+  }
+  else if (wrn && !ovht && printed)
+  {
     // display.println("HI TEMP - FAN ON");
     printed = false;
-  } else if (ovht) {
+  }
+  else if (ovht)
+  {
     display.println("HI TEMP - FAN ON");
     printed = false;
   }

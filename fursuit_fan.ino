@@ -16,15 +16,19 @@ void setup() {
   display.clearDisplay();
   display.setTextSize(4);
   display.setCursor(0, 10);
-    display.setTextColor(WHITE);
+  display.setTextColor(WHITE);
   display.println("Bark!");
   display.display();
-    currentButtonState = digitalRead(BUTTON_PIN);
-    sensors.begin();
+
+  currentButtonState = digitalRead(BUTTON_PIN);
+
+  sensors.begin();
+
   pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(LED_PIN, OUTPUT);
 
-  delay(3000); //give sensor time to stabilize
+  delay(3000); //give sensor time to stabilize, print initialization screen
+
   checkSensors();
   display.setTextSize(1);
   display.setTextColor(WHITE);
@@ -36,16 +40,16 @@ int timer = 0;
 
 void loop() {
 
-  lastButtonState = currentButtonState;      // save the last state
-  currentButtonState = digitalRead(BUTTON_PIN); // read new state
+  lastButtonState = currentButtonState;  
+  currentButtonState = digitalRead(BUTTON_PIN); 
 
   if (lastButtonState == HIGH && currentButtonState == LOW) {
     // toggle state of LED
     ledState = !ledState;
-    // control LED arccoding to the toggled state
+   
     digitalWrite(LED_PIN, ledState);
     defaultDisplay();
-    delay(250); //debounce 25 is genoeg
+    delay(250); //debounce
   }
 
   timer++;
