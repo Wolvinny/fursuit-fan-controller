@@ -1,8 +1,10 @@
-#include "./button.h";
+#include "./button.h"
+#include "./conf.h"
+
 #include <OneWire.h>
 #include <DallasTemperature.h>
 #include <AverageValue.h>
-#include "./conf.h"
+
 
 int wrn = false;
 int ovht = false;
