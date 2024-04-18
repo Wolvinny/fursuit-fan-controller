@@ -56,19 +56,27 @@ You will also need to install the following libraries:
 - DallasTemperature
 - AverageValue
 
-  Once you downloaded the source code, import it in the arduino IDE (File > Open)
-  Once this is done you should see all the files.
-  Next, go to the ![library tab](https://bork.treble-is-fluffy.gay/flooff56c1746.png), and search and install the libraries i mentioned before.
+Once you downloaded the source code, import it in the arduino IDE (File > Open)
+When that is done you should see all the files.
+Next, go to the ![library tab](https://bork.treble-is-fluffy.gay/flooff56c1746.png), and search and install the libraries i mentioned before.
 
-  Once thats done, head to the board manager (the tab above the library manager, and search for arduino nano (the package should be named Arduino AVR Boards).
-  Then, go to Tools > Board > Arduino AVR Boards > and select Arduino nano.
+Once thats done, head to the board manager (the tab above the library manager, and search for arduino nano (the package should be named Arduino AVR Boards).
+Then, go to Tools > Board > Arduino AVR Boards and select Arduino Nano.
 
-  If all is configured well, you should be able to compile (press the checkmark button).
+If all is configured well, you should be able to compile (press the checkmark button).
+
+Then go to Tools > Port and select the port (it should say). Your arduino has to be plugged in.
 
 
+For the hardware part, connect everything according to this schema. The led here is used as a replacement for the transistor, the only thing you need is the purple wire, which goes to the base of the transistor.
+You can choose to use a reset switch or not, the reed switch i ordered came with 2 so i added one. 
+
+The VCC and GND cables can come directly from the USB connection, they do not neccesarily need to be connected via the arduino, though both will work.
 
 
-If you end up using my project, it would mean a lot if you could [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future
+### If you end up using my project, it would mean a lot if you could [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future
+
+If you have any questions or any problems, feel free to [contact me](mailto://wolvinny@wolvinny,dev)
 
 
 
