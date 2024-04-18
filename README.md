@@ -6,8 +6,9 @@ The config is in °C, though the display can be adjusted to display °F <br>
 Features:
 - Manual fan control using a reed switch (i attached a magnet to my paw to trigger it)
 - Temperature monitoring: current temp, min temp, max temp, and average temp (of the last 20 measurements)
-- Hi temp warning: if the temp reaches above a certain number (i used 50 for testing, customisable), a warning will start to flash.
-- Automatic cooling: if the temp reaches above 60 (again customisable), the fan will kick in and stop when a temperature lower than 50 (the warning threshold) is reached.
+- **The temps mentioned were the ones i used for testing. They need to be adjusted to your preferred temps as i doubt a suit would reach 60°**
+- Hi temp warning: if the temp reaches above 50, a warning will start to flash.
+- Automatic cooling: if the temp reaches above 60, the fan will kick in and stop when a temperature lower than 50 (the warning threshold) is reached.
 - A 'Last water' timestamp, which is basically just the time since the system was powered up, so you need to restart / reset to reset this timer.
 
 The configuration can be found in the conf.h file
