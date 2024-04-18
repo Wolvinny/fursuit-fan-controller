@@ -45,7 +45,7 @@ ALternatively, you can connect a switch to the RST pin to reset via there. Note 
 
 ![image](https://github.com/Wolvinny/Fursuit-fan-controller/assets/84203950/aabab62c-70be-47c7-bdce-003191842c2d)
 
-Config. 
+ 
 If you want the temps to be displayed and configured in °F, set USE_F to true. 
 By default, the fan will turn on above the configured overheat threshold. This however can be overriden by using the switch. Do note this will not get rid of the message, and will only reset once the temp drops below the warning threshold. The fan will also automatically turn off once this is reached.
 
@@ -58,7 +58,7 @@ You will also need to install the following libraries:
 
 Once you downloaded the source code, import it in the arduino IDE (File > Open)
 When that is done you should see all the files.
-Next, go to the ![library tab](https://bork.treble-is-fluffy.gay/flooff56c1746.png), and search and install the libraries i mentioned before.
+Next, go to the library tab ![library tab](https://bork.treble-is-fluffy.gay/flooff56c1746.png), and search and install the libraries i mentioned before.
 
 Once thats done, head to the board manager (the tab above the library manager, and search for arduino nano (the package should be named Arduino AVR Boards).
 Then, go to Tools > Board > Arduino AVR Boards and select Arduino Nano.
