@@ -2,7 +2,7 @@
 A fursuit fan controller, that can be manually triggered or when a set temperature is hit. 
 I made this because i have a fan, which is quite powerful but i do not hear anything when its running. <br>
 I havent had much time to test and tune in the temps, this also depends from fursuit to fursuit, though i recommend to keep the warning temp and overheat temp within 10° from eachother.<br>
-The config is in °C, though the display can be adjusted to display °F
+The config is in °C, though this can can be adjusted to use °F
 ### The temps mentioned were the ones i used for testing. They need to be adjusted to your preferred temps as i doubt you'd want you and your suit to ever reach 60°C
 Features:
 - Manual fan control using a reed switch (i attached a magnet to my paw to trigger it)
@@ -76,7 +76,7 @@ The VCC and GND cables can come directly from the USB connection, they do not ne
 
 ### If you end up using my project, it would mean a lot if you could [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future
 
-If you have any questions or any problems, feel free to [contact me](mailto://wolvinny@wolvinny,dev)
+If you have any questions or any problems, feel free to contact me at mail@wolvinny.dev
 
 
 
