@@ -2,11 +2,12 @@
 A fursuit fan controller, that can be manually triggered or when a set temperature is hit. 
 I made this because i have a fan, which is quite powerful but i do not hear anything when its running. <br>
 I havent had much time to test and tune in the temps, this also depends from fursuit to fursuit, though i recommend to keep the warning temp and overheat temp within 10° from eachother.<br>
-The config is in °C, though the display can be adjusted to display °F <br>
+The config is in °C, though the display can be adjusted to display °F
+### The temps mentioned were the ones i used for testing. They need to be adjusted to your preferred temps as i doubt you'd want you and your suit to ever reach 60°C
 Features:
 - Manual fan control using a reed switch (i attached a magnet to my paw to trigger it)
+- Optional reset switch (also via a reed switch)
 - Temperature monitoring: current temp, min temp, max temp, and average temp (of the last 20 measurements)
-- **The temps mentioned were the ones i used for testing. They need to be adjusted to your preferred temps as i doubt a suit would reach 60°**
 - Hi temp warning: if the temp reaches above 50, a warning will start to flash.
 - Automatic cooling: if the temp reaches above 60, the fan will kick in and stop when a temperature lower than 50 (the warning threshold) is reached.
 - A 'Last water' timestamp, which is basically just the time since the system was powered up, so you need to restart / reset to reset this timer.
@@ -54,6 +55,17 @@ You will also need to install the following libraries:
 - OneWire
 - DallasTemperature
 - AverageValue
+
+  Once you downloaded the source code, import it in the arduino IDE (File > Open)
+  Once this is done you should see all the files.
+  Next, go to the ![library tab](https://bork.treble-is-fluffy.gay/flooff56c1746.png), and search and install the libraries i mentioned before.
+
+  Once thats done, head to the board manager (the tab above the library manager, and search for arduino nano (the package should be named Arduino AVR Boards).
+  Then, go to Tools > Board > Arduino AVR Boards > and select Arduino nano.
+
+  If all is configured well, you should be able to compile (press the checkmark button).
+
+
 
 
 If you end up using my project, it would mean a lot if you could [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future
