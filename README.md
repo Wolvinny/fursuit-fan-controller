@@ -1,7 +1,7 @@
-# fursuit fan controller
+# fursuit fan controller [v1.0]
 A fursuit fan controller, that can be manually triggered or when a set temperature is hit. 
 I made this because i have a fan, which is quite powerful but i do not hear anything when its running. <br>
-I havent had much time to test and tune in the temps, this also depends from fursuit to fursuit, though i recommend to keep the warning temp and overheat temp within 10° from eachother.<br>
+I havent had much time to test and tune in the temps, this also depends from fursuit to fursuit, though i recommend to keep the warning temp and overheat temp within 5-10° from eachother.<br>
 The config is in °C, though this can can be adjusted to use °F
 ### The temps mentioned were the ones i used for testing. They need to be adjusted to your preferred temps as i doubt you'd want you and your suit to ever reach 60°C
 Features:
@@ -10,7 +10,7 @@ Features:
 - Temperature monitoring: current temp, min temp, max temp, and average temp (of the last 20 measurements)
 - Hi temp warning: if the temp reaches above 50, a warning will start to flash.
 - Automatic cooling: if the temp reaches above 60, the fan will kick in and stop when a temperature lower than 50 (the warning threshold) is reached.
-- A 'Last water' timestamp, which is basically just the time since the system was powered up, so you need to restart / reset to reset this timer.
+- A 'Last water' timestamp, which is basically just the time since the system was powered up, so you need to restart / reset to restart this timer.
 
 The configuration can be found in the conf.h file
 
@@ -26,7 +26,7 @@ Note that this is just a project i made. I do not have much experience with c so
 - (optional) An OLED screen with i2c control (SDA / SCL pins), i used https://www.otronic.nl/nl/mini-oled-display-wit-096-inch-128x64-i2c.html
 - Arduino editor downloaded on your pc
 - Soldering skills and material
-- Cables to connect everything
+- Wires to connect everything
 - A pcb to mount the components on. While you can just hardwire eveything, a pcb is easier, it also is easier to hide and less messy.
 - Shrink tube / hotglue. Since the oled will be mounted inside of the head, where it can be humid, the display should be protected.
 
@@ -35,10 +35,12 @@ You do need some knowledge about how to upload code to the arduino but theres to
 
 You have to use a transistor to switch on the output fan since the nano can deliver a max of 20mA output, the fan i use is 200mA. <br>
 The default i2c adress for the oled i used was 0x3c. These displays can also have 0x3d as address, you can find yours by looking at the back side of the panel.<br>
+The display is really small (0.98in) and can either be mounted inside of your suit (if you have enough space) or somewhere outside.
 The wiring diagram can be found below<br>
 Here the transistor is replaced by a LED, and the button is your reed switch. Some reed switches have 3 pins, make sure to use the NO (normally open) pin<br>
 SDA is connected to pin A4, SCL to A5.<br>
 The resistor has a value of 4k7<br>
+If your temperature sensor does not come with a board, it will also need a 4k7 resistor.
 
 To reset the nano, press the little reset switch. This will restart the program.
 ALternatively, you can connect a switch to the RST pin to reset via there. Note that this switch needs to be connected to ground, not to 5v
@@ -74,7 +76,7 @@ You can choose to use a reset switch or not, the reed switch i ordered came with
 The VCC and GND cables can come directly from the USB connection, they do not neccesarily need to be connected via the arduino, though both will work.
 
 
-### If you end up using my project, it would mean a lot if you could [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future
+### If you end up using my project, it would mean a lot if you could star it and [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future 
 
 If you have any questions or any problems, feel free to contact me at mail@wolvinny.dev
 
