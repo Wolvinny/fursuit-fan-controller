@@ -1,9 +1,15 @@
+/**
+*  Made by Wolvinny (treble/luna)
+*  You are free to edit this code, as long as you credit me
+*  
+*
+  */
+
+
 #include <Wire.h>
 
 
 #include "./display.h"
-
-#define OLED_RESET 4
 
 void setup() {
 
