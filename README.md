@@ -82,6 +82,8 @@ If you have any questions or any problems, feel free to contact me at mail@wolvi
 
 Special thanks to my friend on discord for helping me with some of this and testing it for me!
 
+If you end up usiong this, make sure to check this repo regularly. I plan on adding some more features later on.
+
 
 
 
