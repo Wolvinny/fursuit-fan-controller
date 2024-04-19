@@ -75,6 +75,10 @@ You can choose to use a reset switch or not, the reed switch i ordered came with
 
 The VCC and GND cables can come directly from the USB connection, they do not neccesarily need to be connected via the arduino, though both will work.
 
+When wired up, i recommend to not quickly switch the fan on and off. When starting up, the current of the fan can peak, so wait until it fully spooled up until you turn it off again. The transistor can handle it but in the long term it can heat up.
+
+None of this has been tested exstensively, so i do not have any idea yet about how hot it gets, how long it lasts, how reliable it is, etc...
+
 
 ### If you end up using my project, it would mean a lot if you could star it and [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future 
 
