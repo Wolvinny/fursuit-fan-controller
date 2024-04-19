@@ -1,7 +1,7 @@
 /**
 *  Made by Wolvinny (treble/luna)
-*  You are free to edit this code, as long as you credit me
-*  
+*  You are free to edit this code, as long as you credit me.
+*  You can use this commercially (if youre a fursuit maker etc), just credit me.
 *
   */
 
