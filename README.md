@@ -80,6 +80,8 @@ The VCC and GND cables can come directly from the USB connection, they do not ne
 
 If you have any questions or any problems, feel free to contact me at mail@wolvinny.dev
 
+Special thanks to my friend on discord for helping me with some of this and testing it for me!
+
 
 
 
