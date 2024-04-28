@@ -28,16 +28,16 @@ void defaultDisplay()
   display.print(temp);
   display.setCursor(0, 10);
   display.print("Max: ");
-  display.print(max);
+  display.print(maxT);
 
   display.print(" Min: ");
-  display.print(min);
+  display.print(minT);
 
   display.setCursor(0, 20);
   display.print("Avg: ");
   float avg = averageValue.average();
 
-  if (avg < min)
+  if (avg < minT)
     display.print("initializing"); // takes a while to stabilize
   else
     display.print(avg);
