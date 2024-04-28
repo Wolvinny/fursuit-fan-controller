@@ -1,5 +1,6 @@
 # fursuit fan controller [v1.0]
-A fursuit fan controller, that can be manually triggered or when a set temperature is hit. 
+
+A fursuit fan controller, that can be manually triggered or when a set temperature is hit. <br>
 I made this because i have a fan, which is quite powerful but i do not hear anything when its running. <br>
 I havent had much time to test and tune in the temps, this also depends from fursuit to fursuit, though i recommend to keep the warning temp and overheat temp within 5-10° from eachother.<br>
 The config is in °C, this can can be adjusted to use °F
@@ -80,17 +81,17 @@ For the hardware part, connect everything according to this schema. The led here
 You can choose to use a reset switch or not, it the same as disconnecting the power and plugging it in again.
 
 The transistor needs to be connected like this <br>
-![](https://bork.treble-is-fluffy.gay/floof1f59dbd5.png)
-Note that if you use a different transistor, the pins might differ. Check its datasheet for the correct pinout.
-**The VCC and GND have to be connected directly to the powerbank. They must not be routed through the arduino**
+![](https://bork.treble-is-fluffy.gay/floof1f59dbd5.png) <br>
+Note that if you use a different transistor, the pins might differ. Check its datasheet for the correct pinout. <br>
+**The VCC and GND have to be connected directly to the powerbank. They must not be routed through the arduino** <br>
 I made a 5v and GND rail on my pcb and from there made my connections.
 Make sure you connect the ground of the powerbank to the arduino aswell, this to make sure both are at the same ground level to avoid issues.
 
 The VCC and GND cables can come directly from the USB connection, they do not neccesarily need to be connected via the arduino, though both will work.
 
 When wired up, i recommend to not quickly switch the fan on and off. When starting up, the current of the fan can peak, so wait until it fully spooled up until you turn it off again. The transistor can handle it but in the long term it can heat up.
-I also used hotglue on the connections to strengthen them, and will design a case for it to fit in.
-None of this has been tested exstensively, so i do not have any idea yet about how hot it gets, how long it lasts, how reliable it is, etc...
+I also used hotglue on the connections to strengthen them, and will design a case for it to fit in. <br>
+None of this has been tested exstensively, so i do not have any idea yet about how hot it gets, how long it lasts, how reliable it is, etc... <br>
 As for the position of the temperature sensor, i'd recommend to put it in the mouth but not directly in the breathing path.
 
 
@@ -101,7 +102,7 @@ If you have any questions or any problems, feel free to contact me at mail@wolvi
 
 Special thanks to my friend on discord for helping me with some code, and testing it for me!
 
-If you end up usiong this, make sure to check this repo regularly. I plan on adding some more features later on.
+If you end up using this, make sure to check this repo regularly. I plan on adding some more features later on.
 
 ### Current issues / room for improvement
  - The average value isnt always accurate and might go up when the temp goes down, though this stabilizes.
