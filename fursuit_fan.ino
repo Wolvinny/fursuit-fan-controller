@@ -12,29 +12,37 @@
 #include "./display.h"
 
 void setup() {
-
-
-
   Wire.begin();
 
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
-  
+
   display.clearDisplay();
   display.setTextSize(4);
   display.setCursor(0, 10);
   display.setTextColor(WHITE);
   display.println("Bark!");
   display.display();
+  currentButtonState = digitalRead(SWITCH_PORT);
+  pinMode(SWITCH_PORT, INPUT_PULLUP);
+  pinMode(FAN_PORT, OUTPUT);
 
-  currentButtonState = digitalRead(BUTTON_PIN);
 
+  delay(2000); //give sensor time to stabilize
+  display.clearDisplay();
+  display.setTextSize(1);
+  display.setCursor(0, 0);
+  display.setTextColor(WHITE);
+  display.println("Using version 1.0");
+  display.setCursor(0, 10);
+  display.println("https://github.com/Wolvinny/fursuit-fan-controller");
+  display.setCursor(0, 40);
+  display.println("Sensor initializing");
+  display.setCursor(0, 50);
+  display.println("Check gh for updates!");
+  display.display();
   sensors.begin();
 
-  pinMode(BUTTON_PIN, INPUT_PULLUP);
-  pinMode(LED_PIN, OUTPUT);
-
-  delay(3000); //give sensor time to stabilize, print initialization screen
-
+  delay(5000);
   checkSensors();
   display.setTextSize(1);
   display.setTextColor(WHITE);
