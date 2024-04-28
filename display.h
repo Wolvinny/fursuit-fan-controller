@@ -41,17 +41,14 @@ void defaultDisplay()
     display.print("initializing"); // takes a while to stabilize
   else
     display.print(avg);
+
   display.setCursor(0, 30);
-  String text = "Fan ";
-  if (ledState == HIGH)
-  {
-    text += "ON";
+//I tried using a variable but this somehow broke the entire thing so I'm forced to do it this way
+  if (ledState) {
+      display.println("Fan ON");
+  } else {
+      display.println("Fan OFF");
   }
-  else
-  {
-    text += "OFF";
-  }
-  display.println(text);
 
   display.setCursor(30, 50);
   // if t > 50 flash, if > 60 constant and fan on
