@@ -68,7 +68,7 @@ void loop() {
 
   timer++;
 
-  if (timer >= 1000) {
+  if (timer >= 1000) { //polling rate of sensor is 750ms 
     timer = 0;
     defaultDisplay();
     checkSensors();
