@@ -25,7 +25,7 @@ Note that this is just a project i made. I do not have much experience with c so
 - A USB cable, and a powerbank with a a low power mode, since the arduino doesnt consume that much current some powerbanks might not detect this and shut off. Some have a low power mode where the output will be always on. I used an Iniu B42 (the one with the paw on it). You can use one USB connection but i chose to separate the control circuit from the fan itself
 - 1 DS18B20 temperature sensor (3 wire version). If there is no board, you also will need a 4k7 resistor.
 - A reed switch and magnet (there are prebuilt reed switch shields)
-- (optional) An OLED screen with i2c control (SDA / SCL pins), i used https://www.otronic.nl/nl/mini-oled-display-wit-096-inch-128x64-i2c.html
+- (optional) An OLED screen with i2c control (SDA / SCL pins), i used [this one](https://www.otronic.nl/nl/mini-oled-display-wit-096-inch-128x64-i2c.html)
 - Arduino editor downloaded on your pc
 - Soldering skills and material
 - Wires to connect everything
@@ -95,7 +95,7 @@ None of this has been tested exstensively, so i do not have any idea yet about h
 As for the position of the temperature sensor, i'd recommend to put it in the mouth but not directly in the breathing path.
 
 
-### If you end up using my project, it would mean a lot if you could star it and [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps ne out, and i plan on making more fursuit-related projects in the future 
+### If you end up using my project, it would mean a lot if you could star it and [support me](https://kofi.wolvinny.dev). I spent a lot of time making this and optimising it for other people to read and use, even the smallest amount helps me out, and i plan on making more fursuit-related projects in the future 
 
 If you have any questions or any problems, feel free to contact me at mail@wolvinny.dev
 
