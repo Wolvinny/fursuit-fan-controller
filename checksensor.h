@@ -11,10 +11,10 @@ int ovht = false;
 int printed = false;
 int trig = false;
 
-float max = 0;
-float min = 50;
+float maxT = 0;
+float minT = 50;
 
-OneWire oneWire(8);
+OneWire oneWire(TEMP_PORT);
 DallasTemperature sensors(&oneWire);
 
 const long MAX_VALUES_NUM = 40;
@@ -38,14 +38,14 @@ void checkSensors()
 
   averageValue.push(curr);
 
-  if (curr > max)
+  if (curr > maxT)
   {
-    max = curr;
+    maxT = curr;
   }
 
-  if (curr < min)
+  if (curr < minT)
   {
-    min = curr;
+    minT = curr;
   }
 
   if (curr > TEMP_WARN)
