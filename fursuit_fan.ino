@@ -27,7 +27,7 @@ void setup() {
   pinMode(FAN_PORT, OUTPUT);
 
 
-  delay(2000); //give sensor time to stabilize
+  delay(2000);
   display.clearDisplay();
   display.setTextSize(1);
   display.setCursor(0, 0);
@@ -42,7 +42,7 @@ void setup() {
   display.display();
   sensors.begin();
 
-  delay(5000);
+  delay(5000); //give sensor time to stabilize
   checkSensors();
   display.setTextSize(1);
   display.setTextColor(WHITE);
